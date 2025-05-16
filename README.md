@@ -1,12 +1,12 @@
 # PsyCo-Agents  
-Official implementation for our NeurIPS 2025 paper  
-**“From Medical Records to Diagnostic Dialogues: A Clinical-Grounded Approach and Dataset for Psychiatric Comorbidity”**
+Implementation of “From Medical Records to Diagnostic Dialogues: A Clinically-Grounded Framework for Psychiatric Comorbidity”  
+*Research paper under review.*
 
 ---
 
 ## ⚠️ Update  
 The EMR dataset **PsyCoProfile** and the diagnostic dialogue dataset **PsyCoTalk** have successfully passed institutional ethics review and are now available on Hugging Face.  
-You can access them at: [https://huggingface.co/datasets](https://huggingface.co/datasets)
+You can access them at: [[https://huggingface.co/datasets](https://huggingface.co/datasets)](https://huggingface.co/datasets/TianXiWan/PsycoData)
 
 
 ---
