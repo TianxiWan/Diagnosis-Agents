@@ -52,7 +52,7 @@ Defaults are all set to 1 for a quick test run.
 python patient_template_gen.py  
 
 # Step 2: generate multi-turn diagnostic conversations
-python main.py
+python main.py```
 
 ## 📁 Input Format and Examples
 
