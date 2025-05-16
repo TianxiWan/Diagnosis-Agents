@@ -45,18 +45,20 @@ Defaults are all set to 1 for a quick test run.
 
 ---
 
-## 3. Run the Pipeline  
+## 3. Run the Pipeline
 
 ```bash
 # Step 1: build dialogue-ready cases and fictitious experience descriptions
 python patient_template_gen.py  
 
 # Step 2: generate multi-turn diagnostic conversations
-python main.py```
+python main.py
+```
 
 ## 📁 Input Format and Examples
 
 We provide a complete sample EMR in `raw_data/cases_completed.json`, which includes both the personal history dictionary and the fictitious experience dictionary. If you wish to use new EMR data, make sure the structure strictly follows this format.
 
 Additionally, we include a sample dialogue output in the `Dial_data/` folder to demonstrate the expected format of the generated conversations.
+
 
