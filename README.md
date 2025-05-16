@@ -1,6 +1,6 @@
 # PsyCo-Agents  
 Official implementation for our NeurIPS 2025 paper  
-**“Two-Stage Construction of Structured Comorbidity EMRs and Diagnostic Dialogues”**
+**“From Medical Records to Diagnostic Dialogues: A Clinical-Grounded Approach and Dataset for Psychiatric Comorbidity”**
 
 ---
 
@@ -12,7 +12,7 @@ The files required to reproduce the pipeline are available now; the full dataset
 
 ## 1. Mandatory Edits  
 
-Open `llm_tools_api.py`:
+Open `llm_tools_api.py` and fill in the corresponding API key and base URL based on the model you intend to use.
 
 | Line   | Purpose       | What to put in                                               |
 |--------|---------------|--------------------------------------------------------------|
@@ -53,3 +53,10 @@ python patient_template_gen.py
 
 # Step 2: generate multi-turn diagnostic conversations
 python main.py
+
+## 📁 Input Format and Examples
+
+We provide a complete sample EMR in `raw_data/cases_completed.json`, which includes both the personal history dictionary and the fictitious experience dictionary. If you wish to use new EMR data, make sure the structure strictly follows this format.
+
+Additionally, we include a sample dialogue output in the `Dial_data/` folder to demonstrate the expected format of the generated conversations.
+
