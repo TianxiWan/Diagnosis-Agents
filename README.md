@@ -1,4 +1,4 @@
-# ToS-Agents  
+# Diagnosis-Agents  
 Implementation of “From Medical Records to Diagnostic Dialogues: A Clinically-Grounded Framework for Psychiatric Comorbidity”  
 *Research paper under review.*
 
