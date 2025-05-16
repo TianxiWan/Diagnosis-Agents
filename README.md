@@ -5,8 +5,9 @@ Official implementation for our NeurIPS 2025 paper
 ---
 
 ## ⚠️ Update  
-The PsyCo-Dial conversation set is under institutional ethics review.  
-The files required to reproduce the pipeline are available now; the full dataset will appear here immediately after approval.
+The EMR dataset **PsyCoProfile** and the diagnostic dialogue dataset **PsyCoTalk** have successfully passed institutional ethics review and are now available on Hugging Face.  
+You can access them at: [https://huggingface.co/datasets](https://huggingface.co/datasets)
+
 
 ---
 
