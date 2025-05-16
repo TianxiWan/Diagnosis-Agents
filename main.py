@@ -192,20 +192,3 @@ for patient_template in tqdm(patient_info):
         json_data = json.dump(total_output_list, f, indent=2, ensure_ascii=False)
 
 print("********总价格*********:", total_cost)
-source_dirs = [
-    r"raw_data",
-    r"./Dial_data",
-    r"prompts/patient/background_story"
-]
-target_base = r"already_runned/1th_run"
-
-os.makedirs(target_base, exist_ok=True)
-
-for src in source_dirs:
-    dest = os.path.join(target_base, os.path.basename(src))
-    if os.path.exists(dest):
-        shutil.rmtree(dest)  
-    shutil.copytree(src, dest)
-    print(f"已复制 {src} 到 {dest}")
-
-print("所有文件夹复制完成。")
