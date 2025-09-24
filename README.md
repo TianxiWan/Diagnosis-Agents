@@ -4,11 +4,6 @@ Implementation of “From Medical Records to Diagnostic Dialogues: A Clinically-
 
 ---
 
-## ⚠️ Update  
-The EMR dataset **PsyCoProfile** and the diagnostic dialogue dataset **PsyCoTalk** have successfully passed institutional ethics review and are now available on 
-
-
----
 
 ## 1. Mandatory Edits  
 
@@ -61,4 +56,61 @@ We provide a complete sample EMR in `raw_data/cases_completed.json`, which inclu
 
 Additionally, we include a sample dialogue output in the `Dial_data/` folder to demonstrate the expected format of the generated conversations.
 
+# 📊 PsycoData Datasets  
 
+The EMR dataset **PsyCoProfile** and the diagnostic dialogue dataset **PsyCoTalk** have successfully passed institutional ethics review. Both are available in this repo under `PsycoData/`.  
+
+PsycoData is the **first large-scale, clinically standardised resource for psychiatric *comorbidity***, consisting of two complementary parts:
+
+| File | Records | Description |
+|------|---------|-------------|
+| **`PsycoProfile.json`** | 502 | Structured EMRs covering six frequent combinations of four core disorders: **MDD, AD, BD, ADHD**. Each EMR includes five *personal histories* and ten *fictitious experiences* for augmentation. |
+| **`PsycoTalk.json`** | 3,000 | Multi-turn diagnostic dialogues generated from EMRs via a **multi-agent simulator guided by a Hierarchical Diagnostic State Machine (HDSM)**. Dialogues average **45.9 turns**, with mean lengths of **34.0 words (doctor)** and **43.5 words (patient)**. |
+
+These datasets enable training and evaluation of LLMs that must screen **multiple psychiatric disorders jointly** and reason over realistic clinical workflows.
+
+---
+
+## Dataset Creation  
+
+- **PsyCoProfile**: Synthesized EMRs capturing diverse patient profiles and symptom presentations.  
+- **PsyCoTalk**: Simulated dialogues that emulate clinical interviews, balancing *clinical consistency* with *linguistic naturalness*.  
+
+Both resources have been reviewed by licensed psychiatrists for validity and plausibility.
+
+---
+
+## Dataset Statistics  
+
+### PsyCoProfile  
+- **Total EMRs**: 502  
+- **Avg. posts per user**: 134  
+- **Avg. symptom posts per user**: 25  
+- **Avg. life event posts per user**: 13  
+- **Avg. distinct symptoms per user**: 27  
+
+### PsyCoTalk  
+- **Total dialogues**: 3,000  
+- **Avg. turns per dialogue**: 45.9  
+- **Avg. doctor utterance length**: 34.0 words  
+- **Avg. patient utterance length**: 43.5 words  
+
+---
+
+## Uses  
+
+### Direct Use  
+- Training and evaluation of multi-label psychiatric diagnostic models  
+- Building dialogue systems for **comorbid disorder screening**  
+- Research on conversational patterns in psychiatric consultations  
+
+### Out-of-Scope Use  
+- **Clinical deployment** without further validation  
+- Any setting requiring **real patient data** (all data are synthetic)
+
+---
+
+## Ethical Considerations  
+
+- **Data Privacy**: All data are synthetic and do not contain personally identifiable information.
+- **Clinical Use**: The datasets are intended for research purposes only and should not be used for clinical decision-making without appropriate validation.
