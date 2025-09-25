@@ -58,14 +58,14 @@ Additionally, we include a sample dialogue output in the `Dial_data/` folder to 
 
 # 📊 PsycoData Datasets  
 
-The EMR dataset **PsyCoProfile** and the diagnostic dialogue dataset **PsyCoTalk** have successfully passed institutional ethics review. Both are available in this repo under `PsycoData/`.  
+The EMR dataset **PsyCoProfile** and the diagnostic dialogue dataset **PsyCoTalk** have successfully passed institutional ethics review. Both are available in this repo under `PsyCoData/`.  
 
 PsycoData is the **first large-scale, clinically standardised resource for psychiatric *comorbidity***, consisting of two complementary parts:
 
 | File | Records | Description |
 |------|---------|-------------|
-| **`PsycoProfile.json`** | 502 | Structured EMRs covering six frequent combinations of four core disorders: **MDD, AD, BD, ADHD**. Each EMR includes five *personal histories* and ten *fictitious experiences* for augmentation. |
-| **`PsycoTalk.json`** | 3,000 | Multi-turn diagnostic dialogues generated from EMRs via a **multi-agent simulator guided by a Hierarchical Diagnostic State Machine (HDSM)**. Dialogues average **45.9 turns**, with mean lengths of **34.0 words (doctor)** and **43.5 words (patient)**. |
+| **`PsyCoProfile.json`** | 502 | Structured EMRs covering six frequent combinations of four core disorders: **MDD, AD, BD, ADHD**. Each EMR includes five *personal histories* and ten *fictitious experiences* for augmentation. |
+| **`PsyCoTalk.json`** | 3,000 | Multi-turn diagnostic dialogues generated from EMRs via a **multi-agent simulator guided by a Hierarchical Diagnostic State Machine (HDSM)**. Dialogues average **45.9 turns**, with mean lengths of **34.0 words (doctor)** and **43.5 words (patient)**. |
 
 These datasets enable training and evaluation of LLMs that must screen **multiple psychiatric disorders jointly** and reason over realistic clinical workflows.
 
