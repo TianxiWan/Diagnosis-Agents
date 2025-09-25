@@ -105,8 +105,8 @@ Both resources have been reviewed by licensed psychiatrists for validity and pla
 - Research on conversational patterns in psychiatric consultations  
 
 ### Out-of-Scope Use  
-- **Clinical deployment** without further validation  
-- Any setting requiring **real patient data** (all data are synthetic)
+- Deployment in real-world clinical settings without further validation.
+- Use in contexts requiring real patient data, as the datasets are synthetic.
 
 ---
 
